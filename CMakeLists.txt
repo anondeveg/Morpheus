@@ -1,11 +1,15 @@
-cmake_minimum_required(VERSION 3.10)
 
-project(Morpheus)
+cmake_minimum_required(VERSION 3.10)
+project(tests LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-if(UNIX)
-    add_compile_options(-Wall -Wextra -ggdb)
+add_executable(tests tests.cpp)
+
+if(MSVC)
+    target_compile_options(tests PRIVATE /W4)
+else()
+    target_compile_options(tests PRIVATE -Wall -Wextra)
 endif()
 
-add_executable(MorpheusApp main.cpp)
