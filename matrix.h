@@ -92,16 +92,9 @@ public:
     }
     static Matrix Constmultiplication(Matrix TargetedMat, int k) {
 
-        Matrix Result({}, std::make_tuple(TargetedMat.rowsize, TargetedMat.columnsize));
-
-        for (int i = 0; i < TargetedMat.rowsize; i++) {
-
-            for (int j = 0; j < TargetedMat.columnsize; j++) {
-
-                Result.matrix[i][j] = TargetedMat.matrix[i][j] * k;
-            }
+        for (int i = 0; i <= k; i++) {
+            AddMatix(TargetedMat, TargetedMat);
         }
-        return Result;
     }
 
 
