@@ -20,9 +20,9 @@ Clone the repo and go ahead! I am open to contributions.
 
 ### TODOs
 
-* ADD matrix addition and subtraction
+* ADD matrix addition and subtraction (DONE)
 * ADD matrix transpose
-* ADD Matrix \times constant operation
+* ADD Matrix \times constant operation (DONE)
 * ADD better error handling
 * IMPROVE the performance of the library
 * ADD testing framework
