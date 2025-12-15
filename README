@@ -1,0 +1,29 @@
+# Morpheus
+
+Matrix manipulation header-only library in C++
+
+## Why?
+
+Fun. This library shouldn't be taken seriously, and definitely **do not** use this in any serious project. The performance is **slow as heck** (we are working on that), the code is sloppy, and errors might arise out of nowhere. It isn't battle-tested (and shouldn't be).
+
+This is just a fun project I made to learn more about matrices.
+
+## The name 
+
+Morpheus is a straightforward reference to The Matrix movie. You know the guy—the one who offers Neo the red pill and pulls him out of the simulation.
+
+## Contributing
+
+Clone the repo and go ahead! I am open to contributions.
+
+**DO NOT USE ANY AI IN CODE.**
+
+### TODOs
+
+* ADD matrix addition and subtraction
+* ADD matrix transpose
+* ADD Matrix \times constant operation
+* ADD better error handling
+* IMPROVE the performance of the library
+* ADD testing framework
+* ADD performance checking
