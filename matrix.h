@@ -91,14 +91,24 @@ public:
         }
     }
     static Matrix Constmultiplication(Matrix TargetedMat, int k) {
+         
+        Matrix Result({}, std::make_tuple(TargetedMat.rowsize, TargetedMat.columnsize));
 
-        for (int i = 0; i <= k; i++) {
-            AddMatix(TargetedMat, TargetedMat);
+
+        for (int i = 0; i < TargetedMat.rowsize; i++) {
+
+            for (int j = 0; j < TargetedMat.columnsize; j++) {
+
+                Result.matrix[i][j] = TargetedMat.matrix[i][j] * k;
+            }
         }
+
+        return Result;
+
     }
 
 
-    static Matrix AddMatix(Matrix Mat1, Matrix Mat2) {
+    static Matrix AddMatrix(Matrix Mat1, Matrix Mat2) {
 
         if (Mat1.Dimension != Mat2.Dimension) {
             /*throw std::invalid_argument(
